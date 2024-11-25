@@ -18,7 +18,7 @@ Assign each instance a security group that allows NFS access on port 2049.
 Create or configure a security group that allows inbound NFS traffic on port 2049 from the security group of both EC2 instances.
 Attach this security group to the EFS file system to permit access from both instances.
 
-#### Step 3: Create an EFS File System
+### Step 3: Create an EFS File System
 In the AWS Console, navigate to the EFS service and select Create file system.
 Select the same VPC as your EC2 instances and configure mount targets in the availability zones where your instances are located.
 Complete the setup and take note of the file system ID (e.g., fs-064645ac116a12816).
